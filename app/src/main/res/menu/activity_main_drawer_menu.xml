@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_current_party"
+            android:icon="@drawable/ic_music_note_black_24dp"
+            android:title="My Party"/>
+        <item
+            android:id="@+id/nav_find_party"
+            android:icon="@drawable/ic_location_searching_black_24dp"
+            android:title="Search Party"/>
+        <item
+            android:id="@+id/nav_create_party"
+            android:icon="@drawable/ic_extension_black_24dp"
+            android:title="Host Party"/>
+    </group>
+    <item android:title="Music">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_my_playlist"
+                    android:icon="@drawable/ic_library_music_black_24dp"
+                    android:title="My Playlist"/>
+                <item
+                    android:id="@+id/nav_find_track"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:title="Find Music"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_my_profile"
+                    android:icon="@drawable/ic_face_black_24dp"
+                    android:title="My Profile"/>
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="Settings"/>
+            </group>
+        </menu>
+    </item>
+</menu>

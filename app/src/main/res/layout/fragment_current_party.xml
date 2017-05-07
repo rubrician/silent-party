@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:weightSum="1"
+             tools:context="com.tinglabs.silent.party.ui.fragments.CurrentPartyFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@drawable/partyintro"/>
+
+    <LinearLayout
+        android:id="@+id/in_party_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@color/colorPrimary"
+            android:weightSum="1"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/grey"/>
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                                           android:id="@+id/pager_view"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:layout_gravity="center_horizontal|top"
+                                           android:weightSum="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/join_party_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:padding="12dip"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/join_party_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="20dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_shape"
+            android:padding="12dip"
+            android:text="@string/find_and_join_party"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/create_party_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_shape"
+            android:padding="12dip"
+            android:text="@string/create_party"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</FrameLayout>

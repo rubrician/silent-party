@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/form_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--Summary--"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+    <TextView
+        android:id="@+id/party_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorSecondaryInverse"
+        tools:text="Awesome Party!"/>
+
+    <include layout="@layout/shared_item_list_view"/>
+
+</LinearLayout>

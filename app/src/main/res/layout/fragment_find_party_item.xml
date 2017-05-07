@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/find_party_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:alpha="0.5"
+              android:background="@color/lightGrey">
+
+    <ImageView
+        android:id="@+id/track_image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:contentDescription="Party item"
+        android:src="@drawable/ic_headset_black_36dp"
+        android:tint="@color/white"
+        android:tintMode="src_in"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/current_party_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            tools:text="The Best Party EVA!!"/>
+
+        <TextView
+            android:id="@+id/party_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondaryInverse"
+            tools:text="Now Open!"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/descr_overflow_button"
+        android:src="@drawable/ic_input_black_36dp"
+        android:tint="@color/white"
+        android:tintMode="src_in"/>
+
+</LinearLayout>

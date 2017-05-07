@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_quit_party"
+        android:title="@string/quit_party"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/quit_party"
+        android:icon="@drawable/ic_refresh_grey_50_24dp"
+        app:showAsAction="ifRoom"/>
+</menu>

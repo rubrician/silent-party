@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.tinglabs.silent.party">
+    <!-- this is here to support API level 16, so I can test on my old xperia :) -->
+    <uses-sdk tools:overrideLibrary="android.support.v17.leanback"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <meta-data
+        android:name="DATABASE"
+        android:value="silent_party.db"/>
+    <meta-data
+        android:name="VERSION"
+        android:value="7"/>
+    <meta-data
+        android:name="QUERY_LOG"
+        android:value="true"/>
+    <meta-data
+        android:name="DOMAIN_PACKAGE_NAME"
+        android:value="com.tinglabs.silent.party"/>
+
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false"/>
+
+    <application
+        android:name="com.tinglabs.silent.party.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.tinglabs.silent.party.ui.ControllerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.tinglabs.silent.party.ui.AuthActivity"
+            android:label="@string/title_activity_auth"
+            android:theme="@style/AppTheme">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.tinglabs.silent.party.service.EventService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name="com.tinglabs.silent.party.service.MockService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service android:name="com.tinglabs.silent.party.player.JcPlayerService"/>
+
+        <receiver
+            android:name="com.tinglabs.silent.party.player.JcPlayerNotificationReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+
+</manifest>

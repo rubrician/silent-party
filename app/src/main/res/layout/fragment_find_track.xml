@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="false"
+              android:orientation="vertical"
+              tools:context="com.tinglabs.silent.party.ui.fragments.FindTrackFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:shadowColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:tint="@color/white"
+            android:tintMode="src_in"
+            app:srcCompat="@drawable/ic_search_black_36dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/no_track_found"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?android:attr/textColorSecondaryInverse"
+        android:visibility="gone"/>
+
+    <include layout="@layout/shared_item_list_view"/>
+
+</LinearLayout>

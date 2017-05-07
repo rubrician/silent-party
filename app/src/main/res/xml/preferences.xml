@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_remember"
+        android:summary="@string/pref_remember_me_summ"
+        android:title="@string/pref_remember_me"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_mock_mode"
+        android:summary="@string/pref_mock_mod_summ"
+        android:title="@string/pref_mock_mode"/>
+</PreferenceScreen>
