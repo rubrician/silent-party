@@ -1,5 +1,5 @@
 # Silent Party
-A concept for hosting party over the local network with music synced across all member devices and can be listened to via headphones - so basically a party but a silent one.
+A concept app for hosting party over the local network with music synced across all member devices and can be listened to via headphones - so basically a party but a silent one.
 The app is supposed to work on any network and can theoretically allow "n" number of party members because of the stateless connection between host and members. This part is mainly achieved through android Network Service Discovery(NSD) and creating a stateless NanoHTTPD Webserver for communication between devices. 
 This architecture could easily be extended to incorporate a central server in order to allow hosting party anywhere via internet.
 
