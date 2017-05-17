@@ -4,9 +4,9 @@ The app is supposed to work on any network and can theoretically allow "n" numbe
 This architecture could easily be extended to incorporate a central server in order to allow hosting party anywhere via internet.
 
 ## Sample
-![alt text](/demo/device-2017-05-16-214443.gif "Logo Title Text 1")
-![alt text](/demo/device-2017-05-16-213500.gif "Logo Title Text 1")
-![alt text](/demo/device-2017-05-16-214154.gif "Logo Title Text 1")
+![alt text](/demo/login.gif)
+![alt text](/demo/host-party)
+![alt text](/demo/join-party)
 
 ## Features
  * Creating and hosting parties on local network
