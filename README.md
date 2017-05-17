@@ -5,8 +5,8 @@ This architecture could easily be extended to incorporate a central server in or
 
 ## Sample
 ![alt text](/demo/login.gif)
-![alt text](/demo/host-party)
-![alt text](/demo/join-party)
+![alt text](/demo/host-party.gif)
+![alt text](/demo/join-party.gif)
 
 ## Features
  * Creating and hosting parties on local network
