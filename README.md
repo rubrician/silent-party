@@ -23,3 +23,7 @@ Please add your Sound Cloud Application ID in the Config.java file:
 ```
  public static final String SOUND_CLOUD_ID  =  ""; // Add your sound cloud ID here
 ```
+## Credits
+Silent Party is using modified versions of the following:
+* [JcPlayer by jeancsanchez](https://www.google.com) for playing music
+* [Wizardroid by Nimrodda](https://github.com/Nimrodda/WizarDroid) for creating a wizard styled hosting party activity
